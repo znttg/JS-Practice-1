@@ -1,5 +1,5 @@
 # Practice1
- JS Practice - Rocketseat
+ JavaScript Practice - Rocketseat
 
  Web programming intro.
 
