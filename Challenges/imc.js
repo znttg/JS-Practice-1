@@ -5,8 +5,12 @@ const height = 1.76;
 
 const imc = wheight / (height * height);
 
+let message = "";
+
 if(imc >= 30){
-   console.log(`${name}, overwheight alert`);
+   message = (`${name}, overwheight alert`);
 } else {
-   console.log(`${name}, your wheight is inside the limits`);
+   message = (`${name}, your wheight is inside the limits`);
 }
+
+console.log(message);

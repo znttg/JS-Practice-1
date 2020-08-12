@@ -3,16 +3,14 @@ const sex = "M";
 const age = 27;
 const tax = 23; // years
 
-if(sex == "M") {
-   if((age + tax) >= 95){
-      console.log(`${name}, you can claim your retirement`);
-   } else {
-      console.log(`${name}, you cant retire yet`);
-   }
-} else if (sex == "F"){
-   if((age + tax) >= 85){
-      console.log(`${name}, you can claim your retirement`);
-   } else {
-      console.log(`${name}, you cant retire yet`);
-   }
+const taxCalculation = age + tax;
+
+// Boolean return
+const menRetirement = sex == 'M' && tax >= 35 && taxCalculation >= 95;   
+const womenRetirement = sex == 'F' && tax >= 30 && taxCalculation >= 85; 
+
+if (menRetirement || womenRetirement) {            // if TRUE,
+   console.log(`${name}, you can retire.`);        // print positive
+} else {                                           // if FALSE
+   console.log(`${name}, you can't retire yet`);   // print negative
 }
