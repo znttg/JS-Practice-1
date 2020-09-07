@@ -1,4 +1,4 @@
-# Practice1
+# Practice
  JavaScript Practice - Rocketseat
 
  Web programming intro.
